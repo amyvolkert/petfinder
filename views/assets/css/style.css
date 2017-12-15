@@ -8,16 +8,11 @@ background-color:#262625;
 border: none;
 }
 
-.heading {
-  background-color: #262625;
-  }
-
 /*index.html*/
 .zoomIn-custom {
   /*Position*/
   text-align: center;
   margin-top: -55px;
-  margin-bottom: 25px;
   /*Typography*/
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -30,7 +25,16 @@ border: none;
   max-width: 10%;
 }
 
-.text {
+.lost-text {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+}
+
+/*index.html words*/
+
+/* .word-text {
   // position: absolute;
   // width: 450px;
   // left: 50%;
@@ -40,7 +44,7 @@ border: none;
   margin-top: 40px;
   padding-right: 135px;
   text-align: center;
-}
+} */
 
 .word {
   position: absolute;
@@ -48,8 +52,37 @@ border: none;
   opacity: 0;
 }
 
-.pomegranate {
-  color: #f6630d;
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
+          transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+.letter.in {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .spash-image {
