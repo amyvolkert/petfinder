@@ -4,13 +4,14 @@
 
 /*navbar*/
 .navbar {
-background-color:#262625;
-border: none;
+  background-color:#262625;
+  border: none;
 }
 
-a {
-  color: white;
+.nav.navbar-nav.navbar-right li a {
+    color: white;
 }
+
 /*index.html*/
 .zoomIn-custom {
   /*Position*/
