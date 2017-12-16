@@ -24,6 +24,10 @@
   text-shadow: 1px 1px orange;
 }
 
+.paw-splash {
+  max-width: 8%;
+}
+
 .lost-text {
   text-align: center;
   margin-bottom: 20px;
@@ -100,11 +104,20 @@
 }
 
 .btn-one {
-  margin-top: -180px;
+  margin-top: -170px;
   margin-left: 30%;
+  margin-right: 8%;
 }
 
 .btn-two {
-  margin-top: -180px;
-  margin-right: 30%;
+  margin-top: -170px;
+}
+
+/*ifound.html*/
+.container-ifound {
+  background-image: url("smilingdog.jpg");
+}
+
+.paw {
+  max-width: 20%;
 }
