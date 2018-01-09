@@ -11,6 +11,7 @@
     "express-fileupload": "^0.1.4",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
+    "heroku-cli": "^6.15.13",
     "moment": "^2.18.1",
     "mysql2": "^1.5.1",
     "passport": "^0.4.0",
